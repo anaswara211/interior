@@ -1,0 +1,79 @@
+/* Container for the Home component */
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Background image styling */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Places image behind other content */
+}
+
+/* Styling for overlay content */
+.content {
+    position: relative;
+    z-index: 1; /* Ensures content appears above the image */
+    color: white;
+    text-align: center;
+    margin-top: 15%;
+    padding: 0 20px;
+}
+
+
+.content h1 {
+    font-size: 3rem; /* Increase font size */
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 1.5rem; /* Text size for the paragraph */
+    margin-top: 1rem;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 20px; /* Adds space between buttons */
+    margin-top: 20px; /* Adjust margin above button group if needed */
+}
+
+.btn {
+    padding: 10px 20px; /* Padding for buttons */
+    font-size: 1rem; /* Base font size for buttons */
+    border-radius: 5px; /* Rounds the corners of buttons */
+    cursor: pointer; /* Changes cursor on hover */
+}
+
+.btn-primary {
+    background-color: transparent; /* Set background to transparent */
+    color: white; /* Text color for 'Get Started' */
+    border: 2px solid white; /* White border for the button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-primary:hover {
+    background-color: white; /* Changes background on hover */
+    color: black; /* Changes text color on hover */
+}
+
+.btn-secondary {
+    background-color: transparent; /* Hollow background for 'Watch Trailer' */
+    color: white; /* Text color for 'Watch Trailer' */
+    border: 2px solid white; /* White border for 'Watch Trailer' */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-secondary:hover {
+    background-color: white; /* Changes background on hover */
+    color: black; /* Changes text color on hover */
+}
